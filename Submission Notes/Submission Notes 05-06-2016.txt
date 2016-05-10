@@ -1,0 +1,16 @@
+Week of 5/6/2016
+
+Week 2 Reflection
+This week has been a bit stressful and over whelming for me so I somehow managed to miss one of my meetings. I think I need to learn to look over my calendar daily instead of waiting for my phone to beep letting me know I have something.
+I also need to do better to ensure that my meetings are in the calendar and that I know they are there.
+
+
+Client and Server Sockets
+I work as a Systems Administrator and Network Administration so I know how it works on that level that the server has to be listen before the client can even reach the server.
+I built this exam as two project in NetBeans so that way I can run the server seperate from the client. The server is located in \portfolio\sandbox1\ClientServer\DateServer and the client is located in \portfolio\sandbox1\ClientServer\ClientData. In this example the server is listening for a connection on port 9090 on all interfaces so when you run the client you can use the IP address of the network card or use localhost which is 127.0.0.1. 
+This can be useful for those that want to build a two or more node application such as the server running the main application and have the client run the smaller set of jobs such as display and interaction with the user and have the client be the processing center.
+
+HTTP URLConnection
+This example is located in \portfolio\sandbox1\http.
+I made a short video on this at https://www.youtube.com/watch?v=E-A_Da5aBOY
+In this example the application will pull the content of a web site and concatenate the web page in a string and print it on the screen. I see that this can be useful in pulling a json from a web server for processing locally. It could also be useful for pulling information from a website where the content can be parsed such as a directory page or even a scores of a football game.
