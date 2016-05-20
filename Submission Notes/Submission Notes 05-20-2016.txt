@@ -1,0 +1,21 @@
+Week of 5/6/2016
+
+Week 3 Reflection
+
+Java Hibernate
+
+This week I did my research of Java Hibernate from http://www.tutorialspoint.com/hibernate and a few other sites.
+
+The idea of have a system manage the backend of the database is really cool that it can create the database what whatever tables it needs to store the data without us know SQL and another cool thing it the backend database can be anything you want it supports almost all of the SQL databases.
+The bad thing is getting Hibernate setup, it’s very difficult because there are a lot of changes in Hibernate, most of the examples on the internet are for Hibernate version 4 and the current version is 5.1, so this make it hard to do, in version 5 there are some functions that are not depreciated. 
+
+In the example I worked with this week, it creates a database entry with ID, a person’s name and address. I decided to replace the required ID with a random number because it would not let me insert an entry with the same ID number. I think for this program to work better we would need to either already have a unique ID of the person or have an incremental number for the ID.
+
+Code URL: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MyHibernate/src/com/hibernate/tutorial/mainclass/Hibernate5InsertTest.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MyHibernate/src/com/hibernate/tutorial/entity/Employee.java
+
+
+Week 5 reflection
+
+This week I spend a lot of time trying to get my Hibernate examples to work and I have come to a conclusion that a lot of the examples on the Internet just will not work because there were either written for old version of Hibernate or that the classes need to be defined in the hibernate.cfg.xml file. Hibernate is great because it simplifies the DAO but I do like real SQL better.
+
