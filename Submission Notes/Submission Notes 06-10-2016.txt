@@ -1,0 +1,19 @@
+Week of 6/3/2016
+
+Week 7 
+
+Threads:
+This week I researched topic of threads and executors, from my research it looks like executors will replace threads because they did not require creating new threads manually. Running threads concurrently can be useful if you want to run multiple jobs at the same time such as running a job to check for new files in specific directories, you would have one thread for each directory.
+
+Research URLS:
+http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/ 
+https://twitter.github.io/scala_school/concurrency.html 
+Code: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/Threads/src/threads.java
+
+MVC:
+I also worked on the MVC model which I first learned in my PHP class, It was hard to adapt to that model because I was using to writing code in the application model. Java MVC is the same as MVC in PHP so this was a good thing to me. I picked a basic example that load a student record and then updates the record with a new name.
+Code is located here and has multiple files due to the nature of MVC: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/MVCPatternDemo.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/Student.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/StudentController.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/StudentView.java
+

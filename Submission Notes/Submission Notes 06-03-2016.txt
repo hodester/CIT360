@@ -1,19 +1,13 @@
-Week of 6/3/2016
+Week of 6/10/2016
 
-Week 7 
+Week 8 
 
 Threads:
-This week I researched topic of threads and executors, from my research it looks like executors will replace threads because they did not require creating new threads manually. Running threads concurrently can be useful if you want to run multiple jobs at the same time such as running a job to check for new files in specific directories, you would have one thread for each directory.
+This week I researched topic of Application Controller and couldn’t find much information about it. From Bother Tuckett’s document post on this m it looks like it’s almost the same thing as a Front Controller application so I tried my best this week to create something that’s an Application Controller. I will also integration Java Collections, HTTP Connection, Executor into one application. My idea this week is to create an application that you would run the morning and it will tell you the weather and your horoscope in addition to the date/time and daily lucky number which is a combination of 10 random numbers. I wasn’t what I could do with threads so I figured that generating random numbers would be a good use of it, since it will save time creating 10 numbers at the same time verses one at a time.
 
-Research URLS:
-http://winterbe.com/posts/2015/04/07/java8-concurrency-tutorial-thread-executor-examples/ 
-https://twitter.github.io/scala_school/concurrency.html 
-Code: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/Threads/src/threads.java
 
-MVC:
-I also worked on the MVC model which I first learned in my PHP class, It was hard to adapt to that model because I was using to writing code in the application model. Java MVC is the same as MVC in PHP so this was a good thing to me. I picked a basic example that load a student record and then updates the record with a new name.
-Code is located here and has multiple files due to the nature of MVC: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/MVCPatternDemo.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/Student.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/StudentController.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/MVC/src/StudentView.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/InfoController.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/MyInfo.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/getThread.java
+
 
