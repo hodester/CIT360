@@ -88,7 +88,7 @@ public class Event implements java.io.Serializable{
 		this.address = address;
 	}
 	
-	@ManyToOne(cascade = {CascadeType.ALL},targetEntity=Address.class)
+	@ManyToOne(cascade = {CascadeType.ALL}, targetEntity=Address.class, fetch=FetchType.EAGER)
 	public Address getAddress() {
 		return address;
 	}

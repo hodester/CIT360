@@ -30,7 +30,7 @@ public class ModTest {
 		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes());
 	
 	
-		results = (Event) CD.getEventByID(1);
+		results = (Event) CD.getEventByID(eventID1);
 		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes());
 	
 		
