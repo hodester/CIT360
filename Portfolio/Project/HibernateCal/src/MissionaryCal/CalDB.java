@@ -54,13 +54,19 @@ public class CalDB {
 	    	Event event = new Event();
 	    	Address address = new Address();
 	    	address.setAddress(memberAddress);
+	    	
+	    	
+	    	
+	    	
+	    	
 	    	event.setDate(oDate);
 	    	event.setName(memberName);
 	    	event.setEmail(memberEmail);
 	    	event.setPhone(memberPhone);
-	    	event.setLkAddress(address);
+	    	event.setAddress(address);
 	    	event.setNotes(notes);
-
+	    	
+	    	session.save(address);
 	    	session.save(event); 
 
 	    	
@@ -137,7 +143,7 @@ public class CalDB {
 			event.setName( memberName );
 			event.setEmail( memberEmail );
 			event.setPhone( memberPhone );
-			event.setLkAddress( address );
+			event.setAddress( address );
 			event.setNotes( notes );
 			session.update(event); 
 			tx.commit();

@@ -19,7 +19,6 @@ import javax.persistence.Table;
 public class Address implements java.io.Serializable{
 	private long addressId;
 	private String address;
-	private Set<Event> eventIds;
 	
 	public Address(){
 		
@@ -37,7 +36,7 @@ public class Address implements java.io.Serializable{
 	@Column(name = "addressId")
 	 
 	public long getAddressId(){
-		return this.addressId;
+		return addressId;
 	}
 	
 	public void setAddress(String address){
@@ -45,16 +44,7 @@ public class Address implements java.io.Serializable{
 	}
 	@Column(name="address", nullable = false, length = 512)
 	public String getAddress() {
-		return this.address;
+		return address;
 	}
 	
-	@OneToMany(cascade=CascadeType.ALL, mappedBy="eventId",  targetEntity=Event.class, fetch=FetchType.EAGER)
-    public Set<Event> getEventIds()  
-    {  
-        return eventIds;  
-    }  
-    public void setEventIds(Set<Event> eventIds)  
-    {  
-        this.eventIds = eventIds;  
-    } 
 }

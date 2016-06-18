@@ -29,7 +29,7 @@ public class Event implements java.io.Serializable{
 	private String email;
 	private String phone;
 	
-	private Address lkaddress;
+	private Address address;
 	private String notes;
 
 	
@@ -39,7 +39,7 @@ public class Event implements java.io.Serializable{
 		this.name = memberName;
 		this.email = memberEmail;
 		this.phone = memberPhone;
-		this.lkaddress = memberAddress;
+		this.address = memberAddress;
 		this.notes = notes;
 	}
 	
@@ -74,7 +74,7 @@ public class Event implements java.io.Serializable{
 	}
 	@Column(name="email", nullable = false, length = 256)
 	public String getEmail() {
-		return this.email;
+		return email;
 	}		
 
 	public void setPhone(String phone){
@@ -82,16 +82,15 @@ public class Event implements java.io.Serializable{
 	}
 	@Column(name="phone", nullable = false, length = 256)
 	public String getPhone() {
-		return this.phone;
+		return phone;
 	}	
-	public void setLkAddress(Address address){
-		this.lkaddress = address;
+	public void setAddress(Address address){
+		this.address = address;
 	}
 	
 	@ManyToOne(cascade = {CascadeType.ALL},targetEntity=Address.class)
-	@JoinColumn(name="addressId") 
-	public Address getLkAddress() {
-		return this.lkaddress;
+	public Address getAddress() {
+		return address;
 	}
 	
 	public void setNotes(String notes){
@@ -99,7 +98,7 @@ public class Event implements java.io.Serializable{
 	}
 	@Column(name="notes", nullable = true, length = 512)
 	public String getNotes() {
-		return this.notes;
+		return notes;
 	}		
 	
 }

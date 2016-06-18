@@ -27,11 +27,11 @@ public class ModTest {
 		
 		
 		Event results = (Event) CD.getEventByDate("6/22/2016");
-		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getLkAddress().getAddress() + "\nNotes: "  + results.getNotes());
+		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes());
 	
 	
-		results = (Event) CD.getEventByID(3);
-		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getLkAddress().getAddress() + "\nNotes: "  + results.getNotes());
+		results = (Event) CD.getEventByID(1);
+		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes());
 	
 		
 	
