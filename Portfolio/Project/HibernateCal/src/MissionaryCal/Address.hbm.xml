@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="MissionaryCal.Address" table="address">
+	<id name="addressId" column="addressId" type="long">
+         <generator class="native"/>
+    </id>
+
+	<property name="address" column="address" type="string"/>
+
+	<set name="eventIds" table="address" inverse="true" fetch="select" cascade="save-update">
+		<key>
+			<column name="lkaddress" not-null="true" />
+		</key>
+		<one-to-many class="Event"/>
+	</set>
+  </class>
+</hibernate-mapping>
