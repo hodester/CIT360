@@ -40,10 +40,8 @@ public class CalDB {
 		Session session = factory.openSession();
 		Transaction tx = null;
 		long eventID = 0;
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 
 		Address address = null;
-
 		
 	    try{
 	    	tx = session.beginTransaction();
@@ -146,8 +144,6 @@ public class CalDB {
 	    	address.setAddress(memberAddress);	
 	    	session.save(address);	
 	        }
-
-			
 	
 	    	event.setDate(convertDate(eventDate));
 	    	event.setName(memberName);
