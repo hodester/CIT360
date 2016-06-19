@@ -41,50 +41,33 @@ public class CalDB {
 		Transaction tx = null;
 		long eventID = 0;
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-		Date oDate = null;
+
 		Address address = null;
-		try {
-			oDate = df.parse(eventDate);
-		} catch (ParseException e) {
-			
-			e.printStackTrace();
-		} 
+
 		
 	    try{
 	    	tx = session.beginTransaction();
 	    	Event event = new Event();
 	    	
-	    	System.err.println("Checking for Address record...");
+	    	// Check if Address already exist
 	    	address = (Address) session.createQuery("FROM Address Where address = :memberAddress").setParameter("memberAddress", memberAddress).uniqueResult();
-
 	        
 	        if (address == null){
-	        	
-	        System.err.println("Address record not found, inserting a new one...");
+	        // Address is new
 	        address = new Address();
 	    	address.setAddress(memberAddress);	
 	    	session.save(address);	
 	        }
 
-	       
-	    	
-	    	
-	    	
-	    	
-	    	
-	    	
-	    	
-	    	event.setDate(oDate);
+	    	event.setDate(convertDate(eventDate));
 	    	event.setName(memberName);
 	    	event.setEmail(memberEmail);
 	    	event.setPhone(memberPhone);
 	    	event.setAddress(address);
 	    	event.setNotes(notes);
-	    	
-	    	
+
 	    	session.save(event); 
 
-	    	
 	    	eventID = event.getEventId();
 	    	tx.commit();
 
@@ -146,20 +129,33 @@ public class CalDB {
 		return event;
 	}	
 
-	public void updateEvent(Integer eventID, Date eventDate, String memberName, String memberEmail, String memberPhone, String memberAddress, String notes){
+	public Long updateEventByID(Long id, String eventDate, String memberName, String memberEmail, String memberPhone, String memberAddress, String notes){
 		Session session = factory.openSession();
 		Transaction tx = null;
+		Address address = null;
 		try{
 			tx = session.beginTransaction();
-			Event event = session.get(Event.class, eventID); 
-			Address address = new Address();
-			address.setAddress(memberAddress);
-			event.setDate( eventDate );
-			event.setName( memberName );
-			event.setEmail( memberEmail );
-			event.setPhone( memberPhone );
-			event.setAddress( address );
-			event.setNotes( notes );
+			Event event = session.get(Event.class, id); 
+
+	    	// Check if Address already exist
+	    	address = (Address) session.createQuery("FROM Address Where address = :memberAddress").setParameter("memberAddress", memberAddress).uniqueResult();
+	        
+	        if (address == null){
+	        // Address is new
+	        address = new Address();
+	    	address.setAddress(memberAddress);	
+	    	session.save(address);	
+	        }
+
+			
+	
+	    	event.setDate(convertDate(eventDate));
+	    	event.setName(memberName);
+	    	event.setEmail(memberEmail);
+	    	event.setPhone(memberPhone);
+	    	event.setAddress(address);
+	    	event.setNotes(notes);
+	    	
 			session.update(event); 
 			tx.commit();
 		}catch (HibernateException e) {
@@ -168,15 +164,15 @@ public class CalDB {
 		}finally {
 			session.close(); 
 		}
+		return id;
 	}
 
-	public void deleteEmployee(Integer eventID){
+	public void deleteEventByID(Long eventID){
 		Session session = factory.openSession();
 		Transaction tx = null;
 		try{
 			tx = session.beginTransaction();
-			Event event = session.get(Event.class, eventID); 
-			session.delete(event); 
+			session.delete(session.get(Event.class, eventID)); 
 			tx.commit();
 		}catch (HibernateException e) {
 			if (tx!=null) tx.rollback();
@@ -187,7 +183,20 @@ public class CalDB {
 	}
 
 
-	    
+	 public Date convertDate(String sdate){
+		 
+			DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+			Date oDate = null;
+			try {
+				oDate = df.parse(sdate);
+			} catch (ParseException e) {
+				
+				e.printStackTrace();
+			} 
+			
+			return oDate;
+		 
+	 }
 
 
 

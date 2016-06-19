@@ -14,7 +14,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -22,7 +21,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "eventcalendar")
-public class Event implements java.io.Serializable{
+public class Event{
 	private long eventId;
 	private Date date;
 	private String name;
@@ -58,7 +57,7 @@ public class Event implements java.io.Serializable{
 		this.date = date;
 	}
 	
-	@Column(name="eventDate")
+	@Column(name="eventDate", unique=true, nullable=false)
 	public Date getDate() {
 		return date;
 	}
@@ -88,7 +87,7 @@ public class Event implements java.io.Serializable{
 		this.address = address;
 	}
 	
-	@ManyToOne(cascade = {CascadeType.ALL}, targetEntity=Address.class, fetch=FetchType.EAGER)
+	@ManyToOne(cascade = {CascadeType.PERSIST}, targetEntity=Address.class, optional = true, fetch=FetchType.EAGER)
 	@JoinColumn(name="addressId")
 	public Address getAddress() {
 		return address;
