@@ -33,7 +33,7 @@ public class Address implements java.io.Serializable{
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "addressId")
+	@Column(name = "addressId", unique=true, nullable=false)
 	 
 	public long getAddressId(){
 		return addressId;
@@ -42,7 +42,7 @@ public class Address implements java.io.Serializable{
 	public void setAddress(String address){
 		this.address = address;
 	}
-	@Column(name="address", nullable = false, length = 512)
+	@Column(name="address", nullable = false, length = 512, unique=true)
 	public String getAddress() {
 		return address;
 	}

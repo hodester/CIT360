@@ -50,7 +50,7 @@ public class Event implements java.io.Serializable{
 	}
 	@Id
 	@GeneratedValue
-	@Column(name = "eventId")
+	@Column(name = "eventId", unique=true, nullable=false)
 	public long getEventId(){
 		return this.eventId;
 	}
@@ -89,6 +89,7 @@ public class Event implements java.io.Serializable{
 	}
 	
 	@ManyToOne(cascade = {CascadeType.ALL}, targetEntity=Address.class, fetch=FetchType.EAGER)
+	@JoinColumn(name="addressId")
 	public Address getAddress() {
 		return address;
 	}

@@ -42,18 +42,33 @@ public class CalDB {
 		long eventID = 0;
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 		Date oDate = null;
+		Address address = null;
 		try {
 			oDate = df.parse(eventDate);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} 
 		
 	    try{
 	    	tx = session.beginTransaction();
 	    	Event event = new Event();
-	    	Address address = new Address();
-	    	address.setAddress(memberAddress);
+	    	
+	    	System.err.println("Checking for Address record...");
+	    	address = (Address) session.createQuery("FROM Address Where address = :memberAddress").setParameter("memberAddress", memberAddress).uniqueResult();
+
+	        
+	        if (address == null){
+	        	
+	        System.err.println("Address record not found, inserting a new one...");
+	        address = new Address();
+	    	address.setAddress(memberAddress);	
+	    	session.save(address);	
+	        }
+
+	       
+	    	
+	    	
 	    	
 	    	
 	    	
@@ -66,7 +81,7 @@ public class CalDB {
 	    	event.setAddress(address);
 	    	event.setNotes(notes);
 	    	
-	    	session.save(address);
+	    	
 	    	session.save(event); 
 
 	    	
