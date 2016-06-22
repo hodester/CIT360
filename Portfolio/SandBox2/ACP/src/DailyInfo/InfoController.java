@@ -15,7 +15,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.text.SimpleDateFormat;
@@ -29,6 +31,14 @@ public class InfoController {
 	private static String wtext;
 	private static String horoscope;
 	private static List<Number> numberList = new ArrayList<Number>();
+	static Map<Character, Runnable> commands = new HashMap<>();
+	
+	static void populateHashMap(){
+		commands.put('w', () -> updateWeather());
+		commands.put('h', () -> updateHoroscope());
+		commands.put('n', () -> updateNumberList());
+		
+	}
 
 	static void updateWeather(){
 		JsonElement element = null;
@@ -126,6 +136,6 @@ public class InfoController {
 		}
 
 	}
-	
+
 		
 }

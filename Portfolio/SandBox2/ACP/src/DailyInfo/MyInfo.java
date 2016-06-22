@@ -19,10 +19,10 @@ public class MyInfo {
 		System.out.println("Today is " + InfoController.getDate());
 
 		System.out.println();
-		
-		InfoController.updateWeather();
-		InfoController.updateHoroscope();
-		InfoController.updateNumberList();
+		InfoController.populateHashMap();
+		InfoController.commands.get('w').run();
+		InfoController.commands.get('h').run();
+		InfoController.commands.get('n').run();
 		
 		System.out.println();
         System.out.printf("Temperature is %sF and looks %s\n", InfoController.getWTemp(), InfoController.getWText());

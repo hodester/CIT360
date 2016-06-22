@@ -9,3 +9,6 @@ This week I researched topic of Application Controller and couldn’t find much in
 https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/InfoController.java
 https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/MyInfo.java
 https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/getThread.java
+
+Update 6/21/2016
+This week I have correct my ACP application to include the missing HashMap.

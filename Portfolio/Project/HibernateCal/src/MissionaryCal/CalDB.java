@@ -163,12 +163,33 @@ public class CalDB {
 		return id;
 	}
 
+	public int deleteEventByDate(String eventDate){
+		Session session = factory.openSession();
+		Transaction tx = null;
+		int result = 0;
+		try{
+			tx = session.beginTransaction();
+			Query query = session.createQuery("delete  Event where eventDate = :date"); 
+			query.setParameter("date", convertDate(eventDate));
+			result = query.executeUpdate();
+			tx.commit();
+		}catch (HibernateException e) {
+			if (tx!=null) tx.rollback();
+				e.printStackTrace(); 
+		}finally {
+			session.close(); 
+		}
+		
+		return result;
+	}
+
 	public void deleteEventByID(Long eventID){
 		Session session = factory.openSession();
 		Transaction tx = null;
 		try{
 			tx = session.beginTransaction();
-			session.delete(session.get(Event.class, eventID)); 
+			Event event = session.get(Event.class, eventID);
+			session.delete( event); 
 			tx.commit();
 		}catch (HibernateException e) {
 			if (tx!=null) tx.rollback();
@@ -177,7 +198,6 @@ public class CalDB {
 			session.close(); 
 		}
 	}
-
 
 	 public Date convertDate(String sdate){
 		 
