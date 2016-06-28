@@ -10,53 +10,60 @@ package MissionaryCal;
 public class ModTest {
 
 	public static void main(String[] args) {
-		System.err.println("Starting Application\nConnecting to Database using Hibernate\n");
+		System.out.println("Starting Application\nConnecting to Database using Hibernate\n");
 				
 		CalDB.connectDB();
 		
-		System.err.println("\n\n\n\n");
+		System.out.println("\n\n\n\n");
 
 		CalDB CD = new CalDB();
 		
+		Form form = new Form();
+		
+		form.NewEvent();
+		
+/*		
 		String sampledate = getRandomDate();
 		
+		
+		
 		Long eventID1 = CD.addEvent(getRandomDate(), "Peter", "Peter@domain.com", "(858) 123-4567", "123 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID1 +"\n");
+		System.out.println("Added entry new ID is " + eventID1 +"\n");
 		
 		Long eventID2 = CD.addEvent(sampledate, "Jennifer", "Jennifer@domain.com", "(858) 123-4568", "123 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID2 +"\n");
+		System.out.println("Added entry new ID is " + eventID2 +"\n");
 		
 		Long eventID3 = CD.addEvent(getRandomDate(), "Simon", "Simon@domain.com", "(858) 123-4569", "125 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID3 +"\n");
+		System.out.println("Added entry new ID is " + eventID3 +"\n");
 		
 		Long eventID4 = CD.addEvent(getRandomDate(), "Theodore", "Theodore@domain.com", "(858) 123-4569", "125 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID4 +"\n");
+		System.out.println("Added entry new ID is " + eventID4 +"\n");
 		
 		Long eventID5 = CD.addEvent(getRandomDate(), "Brittany", "Brittany@domain.com", "(858) 123-4569", "125 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID5 +"\n");
+		System.out.println("Added entry new ID is " + eventID5 +"\n");
 		
 		Long eventID6 = CD.addEvent(getRandomDate(), "Jeanette", "Jeanette@domain.com", "(858) 123-4569", "125 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Added entry new ID is " + eventID6 +"\n");
+		System.out.println("Added entry new ID is " + eventID6 +"\n");
 
 		
 		
 		Event results = (Event) CD.getEventByDate(sampledate);
-		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
+		System.out.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
 	
 	
 		results = (Event) CD.getEventByID(eventID1);
-		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
+		System.out.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
 	
-		System.err.println("Deleting record " + eventID4 + "\n");
+		System.out.println("Deleting record " + eventID4 + "\n");
 		CD.deleteEventByID(eventID4);
 		
 		Long eventIDupdate = CD.updateEventByID(eventID1,getRandomDate(), "Peter Wong", "Peter@domain.com", "(858) 123-4567", "123 Fake Street, San Diego, CA 91219", "Test notes");
-		System.err.println("Updated entry ID: " + eventIDupdate +"\n");
+		System.out.println("Updated entry ID: " + eventIDupdate +"\n");
 		
 		results = (Event) CD.getEventByID(eventIDupdate);
-		System.err.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
-		
-
+		System.out.println("Results\nID:" + results.getEventId() + "\nDate: " + results.getDate() + "\nName: "  + results.getName() + "\nEmail: "  + results.getEmail() + "\nPhone: "  + results.getPhone() + "\nAddress: "  + results.getAddress().getAddress() + "\nNotes: "  + results.getNotes() +"\n");
+		*/
+		System.out.println("Good bye now");
 	}
 
 	
