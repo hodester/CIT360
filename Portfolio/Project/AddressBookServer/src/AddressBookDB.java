@@ -6,11 +6,14 @@
 */
 
 import java.util.List;
+import java.util.Set;
 import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
+
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session; 
@@ -69,6 +72,12 @@ public class AddressBookDB {
 	        	System.err.println("Address already exist" + address + "\n");
 	        	
 	        }
+	        
+	        Set<Address> addresses = new HashSet<Address>();
+	        addresses.add(address1);
+	        addresses.add(address2);
+	        person.setAddresses(addresses);
+	        
 	        person.setAddress(address);
 	        person.setDob(convertDate(dob));
 	        person.setName(pName);

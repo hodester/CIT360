@@ -6,6 +6,8 @@
 */
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -14,11 +16,14 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "person")
+@Table(name = "person", catalog = "addressbook", uniqueConstraints = {
+		@UniqueConstraint(columnNames = "name")})
 public class Person{
 	private long personId;
 	private String name;
@@ -26,17 +31,24 @@ public class Person{
 	private String email;
 	private String phone;
 	
-	private Address address;
+	private Set<Address> addresses = new HashSet<Address>(0);
 
 
 	
 	public Person(){}
-	public Person(Date dob, String memberName, String memberEmail, String memberPhone, Address memberAddress){
+	public Person(Date dob, String memberName, String memberEmail, String memberPhone){
 		this.dob = dob;
 		this.name = memberName;
 		this.email = memberEmail;
 		this.phone = memberPhone;
-		this.address = memberAddress;
+
+	}
+	public Person(Date dob, String memberName, String memberEmail, String memberPhone, Set<Address> addresses){
+		this.dob = dob;
+		this.name = memberName;
+		this.email = memberEmail;
+		this.phone = memberPhone;
+		this.addresses = addresses;
 
 	}
 	
@@ -81,14 +93,16 @@ public class Person{
 	public String getPhone() {
 		return phone;
 	}	
-	public void setAddress(Address address){
-		this.address = address;
+
+	@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinTable(name = "person_address", catalog = "mkyongdb", joinColumns = { 
+	@JoinColumn(name = "personId", nullable = false, updatable = false) }, inverseJoinColumns = { @JoinColumn(name = "addressId", nullable = false, updatable = false) })
+	public Set<Address> getAddresses() {
+		return this.addresses;
 	}
-	
-	@ManyToOne(cascade = {CascadeType.PERSIST}, targetEntity=Address.class, optional = true, fetch=FetchType.EAGER)
-	@JoinColumn(name="addressId")
-	public Address getAddress() {
-		return address;
+
+	public void setAddresses(Set<Address> addresses) {
+		this.addresses = addresses;
 	}
 	
 	
