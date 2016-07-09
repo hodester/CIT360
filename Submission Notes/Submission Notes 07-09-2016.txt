@@ -1,21 +1,13 @@
-Week of 7-1-2016
+Week of 7-9-2016
 
-Week 11 
+Week 12 
 
-This week I decided to extend my ACP application and integrate it with Server Client sockets to that that application more useful.
-This means that the client end could be lighter and smaller. I learn a lot more this time around with the client server because I combined it with a loop and made it more dynamic that it was before.
+This week I did my diagram on a Java Turtle code because I thought it we be better to base my diagrams on working code than my group project or my own code.
+I used BlueJ for the Class diagram and MS Visio for the other ones. I learn this week that creating diagram is very time consuming and that BlueJ does not extract variable names within the classes.
 
-This week I was also pondering how I could make my Address Book application work but when I added many-to-many relationship to the mix of hibernate it got more complex and confusing.
-I maybe go back to it but it adds no value to my topics if I don't do the many-to-many relationship so it's on the back burner for now.
 
-I also worked on my use case diagram and use case document this week.
-
-Code URL:
-
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/ACPClient/src/ACPClient.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/ACPServer/src/DailyInfo/ACPServer.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/ACPServer/src/DailyInfo/InfoController.java
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/ACPServer/src/DailyInfo/getThread.java
-
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Use%20Case%20Document.docx
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Use%20Case.pdf
+Diagram URL:
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Activity%20Diagram.pdf
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Class%20Diagram%20with%20BlueJ.jpg
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Sequence%20Diagram.pdf
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/State%20Diagram.pdf
