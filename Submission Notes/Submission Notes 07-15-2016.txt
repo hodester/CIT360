@@ -6,11 +6,11 @@ This week I worked on the MVC model more with my Address Book application, it in
 Working on MVC for a non-GUI application was a little confusing at first because I didn’t know what to put in the view, with a GUI application this would be all the display stuff, so I just put the display stuff in there too.
 
 Diagram URL:
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Activity%20Diagram.pdf
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Class%20Diagram%20with%20BlueJ.jpg
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Sequence%20Diagram.pdf
-https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/State%20Diagram.pdf
-
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/AddressBook.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/controller/AddressBookController.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/model/HibernateDB.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/model/Person.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/view/AddressBookView.java
 
 
 Professional Behavior
