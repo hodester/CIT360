@@ -18,8 +18,8 @@ import AddressBook.view.*;
 
 public class AddressBookController {
 	   private Person model;
-	   private static AddressBookView view;
-	   private static HibernateDB CD;
+	   private AddressBookView view;
+	   private HibernateDB CD;
 	   boolean exit;
 
 	   public AddressBookController(Person model, AddressBookView view){
@@ -195,17 +195,6 @@ public class AddressBookController {
 		view.printinfo("5. Seed with Sample Data");
 		view.printinfo("9. Exit");
 	}
-	public void executeTask(String option){
-		
-	}
-	public static String getRandomDate()
-    {
-        String date="";
-        int yearBegin=2016;
-        int yearEnd=2017-yearBegin;
-
-        date=""+(1 + (int)(Math.random() * 12)+"/"+(1 + (int)(Math.random() * 31)+"/"+(yearBegin + (int)(Math.random() * yearEnd))));
-        return date;
-    }
 	
 }
+
