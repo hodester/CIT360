@@ -48,5 +48,19 @@ Class meetings:
 
 I have been leading the class meetings and class projects, I try to make sure everyone has something to do and I try to schedule the meetings with everyone. this is mostly done in google hangout chat during the week.
 
-journal report 
+Group project
+Source: https://github.com/canito487/Team-4-S16-CIT360/tree/master/CalendarApp/src
+I created the following files:
+Address.java
+CalDB.java
+Event.java
+Form.java
 
+I worked on changing Jayson's Calendar view code to work with our application:
+calendarView.java
+
+Caleb created:
+MenuView.java
+
+Kyle created the menu that I changed to the controller and edited it to work with our applcation
+CalendarMenu.java
