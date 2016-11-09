@@ -108,5 +108,24 @@ public class AgileTestTest {
         double result = instance.addDec(s3, s4);
         assertEquals(expResult, result, 0.0);
     }
+
+    /**
+     * Test of multiply method, of class AgileTest.
+     */
+    @Test
+    public void testMultiply() {
+        System.out.println("multiply");
+        String s1 = "2";
+        String s2 = "3";
+        AgileTest instance = new AgileTest();
+        int expResult = 6;
+        int result = instance.multiply(s1, s2);
+        assertEquals(expResult, result);
+    }
+    
+    
+    
+    
+    
     
 }

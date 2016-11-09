@@ -25,4 +25,12 @@ public class AgileTest {
         double doub4 = Double.parseDouble(s4);
         return doub3 + doub4;
     }
+    
+    public int multiply(String s1, String s2) {
+        // Function will be developed in the test. 
+        // convert string to int
+        int int5 = Integer.parseInt(s1);
+        int int6 = Integer.parseInt(s2);
+        return int5 * int6;
+    }
 }
