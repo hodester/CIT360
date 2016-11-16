@@ -14,7 +14,7 @@ import javax.persistence.*;
  * @author mhodes
  */
 @Entity
-@Table(name = "USER")
+@Table(name = "DBUSER")
 public class DataBaseUser implements Serializable {
 
     @Id
