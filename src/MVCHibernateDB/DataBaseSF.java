@@ -27,7 +27,6 @@ public class DataBaseSF {
         config.setProperty("hibernate.connection.username", "teameadmin");
         config.setProperty("hibernate.connection.password", "c!t360T3amE");
         config.setProperty("hibernate.connection.pool_size", "1");
-        config.setProperty("hibernate.connection.pool_size", "1");
         config.setProperty("hibernate.connection.autocommit", "true");
         config.setProperty("hibernate.cache.provider_class", "org.hibernate.cache.NoCacheProvider");
         config.setProperty("hibernate.show_sql", "false");
