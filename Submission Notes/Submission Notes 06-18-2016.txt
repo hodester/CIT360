@@ -1,0 +1,19 @@
+Week of 6/18/2016
+
+Week 9 
+
+HibernateCal:
+This week I have been working on a section that will be a part of our group project.
+This section handles the data request from and to the database using hibernate. 
+Hibernate has never been my favorite topic in all my Life in Technology which is almost 12 years.
+I decided to take this project on for my group project because no one really wanted it and it would be a good challenge for me due to my history of not liking it.
+I spent countless hours working on hibernate and trying to figure it out.
+I have integrated hibernate with some other technologies, with hibernate I got Many to one relationship working but I have not figured out what to do with a many to many relationship for my project.
+I have learnt a lot from this experiance many because of a lot of googling and looking in forums, I found the bigest problem is that hibernate has changed a lot and most of the examples on the internet are outdated.
+Also don't use hibernate 5.2, it has a few bugs to I will stick with 5.1 for now.
+
+Code URL:
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateCal/src/MissionaryCal/Address.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateCal/src/MissionaryCal/CalDB.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateCal/src/MissionaryCal/Event.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateCal/src/MissionaryCal/ModTest.java

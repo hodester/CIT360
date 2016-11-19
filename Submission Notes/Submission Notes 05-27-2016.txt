@@ -1,0 +1,24 @@
+Week of 5/27/2016
+
+Week 6 
+
+This week I decided to step things up a bit and I will integrate Json Serialization, HTTP Connection and Java Collection together in one mini project.
+For this project I will take a json from the web and parser it and take the first name and last names from the list and put it into an ListArray of objects then I will serialize it to a JSON string with just the names.
+This week I learn that reading JSON can be tricky because of how the data is laid out so you have to read each level to get the data you want from it. Once I converted it to a JSON object is was a little easier to read data from.
+
+Code URL: https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/JSON/src/serializeweblist.java
+
+
+Junit Test
+For Junit testing I was going to integrate with my mini project but it did not run my main program so I decide it should be separate due to the nature of Junit. This should be used for testing only and should not be combined into any application.
+
+Code URL: https://github.com/peterywong/CIT360/blob/master/Portfolio/sandbox1/JUnit/src/JunitTest1.java
+
+
+
+Week 6 refection
+This week I realized I was running a little behind on my examples so I decided to do a mini project instead to catch up a little.
+I learn a lot more about JSON and how they work with Java, before I only had used them in PHP so this was new to me but I learned how to use it as a JSON Object  which is a great thing.
+
+I was a little disappoint with my team this week, only I and one other team member was working on the project design for group. I'm not really why that happened and how I can help improve the situation.
+

@@ -1,0 +1,41 @@
+Week of 5/6/2016
+
+Week 3 Reflection
+
+Java Collections
+
+This week I did my research of Java Collections from http://www.tutorialspoint.com/java/java_collections.htm and I found this site to be very useful in understanding this topic in detail.
+
+Map is a hashmap where you put values using a name and retrieve values as a name, this comes a list and you can remove elements from the list. This is useful for tracking peoples age or how much each person has, I think you could even maybe store city names and their zip code but a real array might be more useful.
+In this example I will use the basic functions of adding and getting elements from the Map. There does not appear to be an Iterator for Map.
+Info: http://www.tutorialspoint.com/java/java_map_interface.htm
+My Example: GitHub\CIT360\Portfolio\sandbox1\JavaCollections\src\CollectionsMap.java
+
+List
+There are two kinds of List but they both seem to function the same but really they are different such as 
+ArrayList is faster at search.
+LinkedList is faster at inserting data and removing data.
+We should pick one based on what we do more often and required to be faster.
+In this example I will use the basic functions of adding, getting and deleting elements from the List, I will show this as a shopping list since that's what I think about when I think of a list. I also worked on Iterator for this and it works well.
+Info: http://www.tutorialspoint.com/java/java_list_interface.htm
+My Example: GitHub\CIT360\Portfolio\sandbox1\JavaCollections\src\CollectionsList.java
+
+Set
+This one is a little confusing because I could not find any sets but Sets include HashSet, LinkedHashSet and TreeSet.
+Sets is a list of a group of numbers or names that cannot contain a duplicate name or number. 
+I will pick HashSet for my example and will save TreeSet for Tree.
+I think HastSet works very much like the HashMap but without storing values because you cannot have the same index in this case the index is a text value that gets hashed. Also the HashSet seems to automatically sort the list but not really, the order does change from how you added it. I also worked on Iterator for this and it works well.
+Info: http://www.tutorialspoint.com/java/java_hashset_class.htm
+My Example: GitHub\CIT360\Portfolio\sandbox1\JavaCollections\src\CollectionsSet.java
+
+Tree
+It seems that Java Collections does not contain a Tree but it does contain TreeSet and TreeMap so I'll work on TreeSet for my example. I think the reason being is that a real tree would not be useful in object oriented programming. This one seems to have a lot more sub functions that the rest, such as iterator, comparator and a few others. One thing I notice is it does really sort the order of items in its list which is really cool but might be an annoying if you are trying to create an ordered list for a list of steps to a task. In my example I tested adding duplicates and removing items to see how that affects the first item.
+I also worked on Iterator for this and it works well.
+Info: http://www.tutorialspoint.com/java/java_treeset_class.htm
+My Example: D:\peter\Documents\GitHub\CIT360\Portfolio\sandbox1\JavaCollections\src\CollectionsTree.java
+
+Week 2 Reflection
+This has been a crazy week, Java Collections is not hard but time consuming mostly because of added items into a list but also I think it might be time to switch to Eclipse or a better IDE than NetBeans.
+You can have multiple main files but you have to go to properties each time to change it, I would like to just be able to select a file and click on run.
+I think this week I feel a little better with Java and this class. My last Java class at UCSD was crazy and made me not like it, we were up all night working on long programming assignments.
+

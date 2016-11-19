@@ -1,0 +1,14 @@
+Week of 6/10/2016
+
+Week 8 
+
+Threads:
+This week I researched topic of Application Controller and couldn’t find much information about it. From Bother Tuckett’s document post on this m it looks like it’s almost the same thing as a Front Controller application so I tried my best this week to create something that’s an Application Controller. I will also integration Java Collections, HTTP Connection, Executor into one application. My idea this week is to create an application that you would run the morning and it will tell you the weather and your horoscope in addition to the date/time and daily lucky number which is a combination of 10 random numbers. I wasn’t what I could do with threads so I figured that generating random numbers would be a good use of it, since it will save time creating 10 numbers at the same time verses one at a time.
+
+
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/InfoController.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/MyInfo.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/SandBox2/ACP/src/DailyInfo/getThread.java
+
+Update 6/21/2016
+This week I have correct my ACP application to include the missing HashMap.

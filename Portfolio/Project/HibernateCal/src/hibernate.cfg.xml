@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+	<!-- Assume test is the database name -->
+	<property name="hibernate.connection.url">jdbc:mysql://localhost/myhibernatedb?useSSL=false</property>
+	<property name="hibernate.connection.username">hibernateuser</property>
+	<property name="hibernate.connection.password">o1EJPAVw4jJw</property>
+	<property name="show_sql">false</property>
+	<property name="hbm2ddl.auto">update</property>
+	<mapping class="MissionaryCal.Event" />
+    <mapping class="MissionaryCal.Address" />
+	
+	<!--<mapping resource="MissionaryCal/Event.hbm.xml"/>
+	<mapping resource="MissionaryCal/Address.hbm.xml"/>-->
+
+	</session-factory>
+</hibernate-configuration>

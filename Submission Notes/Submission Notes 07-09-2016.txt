@@ -1,0 +1,13 @@
+Week of 7-9-2016
+
+Week 12 
+
+This week I did my diagram on a Java Turtle code because I thought it we be better to base my diagrams on working code than my group project or my own code.
+I used BlueJ for the Class diagram and MS Visio for the other ones. I learn this week that creating diagram is very time consuming and that BlueJ does not extract variable names within the classes.
+
+
+Diagram URL:
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Activity%20Diagram.pdf
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Class%20Diagram%20with%20BlueJ.jpg
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/Sequence%20Diagram.pdf
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Diagrams/State%20Diagram.pdf

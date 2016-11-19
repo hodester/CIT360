@@ -1,0 +1,66 @@
+Week of 7-15-2016
+
+Week 13 
+
+This week I worked on the MVC model more with my Address Book application, it integrates Hibernate, Java Collections List, and MVC together for form my application.
+Working on MVC for a non-GUI application was a little confusing at first because I didn’t know what to put in the view, with a GUI application this would be all the display stuff, so I just put the display stuff in there too.
+
+Diagram URL:
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/AddressBook.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/controller/AddressBookController.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/model/HibernateDB.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/model/Person.java
+https://github.com/peterywong/CIT360/blob/master/Portfolio/Project/HibernateMVC/src/AddressBook/view/AddressBookView.java
+
+
+Professional Behavior
+CIT 360 - Spring 2016 - Intro Video https://www.youtube.com/watch?v=A9c6dGClA_4
+CIT360 Project Proposal  https://www.youtube.com/watch?v=FjOEhr63d7Q
+
+Team questions:
+https://plus.google.com/u/0/+PeterWong84/posts/Xfp9EmQTF5u
+https://plus.google.com/u/0/+PeterWong84/posts/UoVwwy9tSL2
+https://plus.google.com/u/0/+PeterWong84/posts/U7vHg6M4px2
+https://plus.google.com/u/0/+PeterWong84/posts/1JFCPr3LDvK
+
+Class questions:
+https://plus.google.com/u/0/+PeterWong84/posts/cbGarGCVtzo
+https://plus.google.com/u/0/+PeterWong84/posts/PWU5wdNA7k5
+https://plus.google.com/117302642697248891327/posts/FUXWsEP1jEB
+https://plus.google.com/117302642697248891327/posts/DX4MKyDgDUk
+https://plus.google.com/117302642697248891327/posts/JChsHfPonTo
+https://plus.google.com/117302642697248891327/posts/Za2ptWBkRaT
+https://plus.google.com/117302642697248891327/posts/1TsfTmQxwVe
+https://plus.google.com/112906650527970210704/posts/fuU68TpBLfK
+
+Teaching videos:
+Hibernate https://www.youtube.com/watch?v=W13_Z_g_ruI
+Java Collections https://www.youtube.com/watch?v=Cvv3b9VuC5s
+MVC Hibernate https://youtu.be/urJNeclMCOA
+
+Class meetings:
+7/13/2016 and group presentation https://www.youtube.com/watch?v=Ey3EBN5z66Q&feature=youtu.be
+7/5/2016 https://www.youtube.com/watch?v=1prDaBbI43o
+6/28/2016 https://www.youtube.com/watch?v=J3zJ6jI6cHQ
+6/14/2016 https://www.youtube.com/watch?v=lmzRBCyABeA
+6/7/2016 https://www.youtube.com/watch?v=tHSXFuIDKac
+5/19/2016 https://www.youtube.com/watch?v=Hi_Xq6tNkTI
+
+I have been leading the class meetings and class projects, I try to make sure everyone has something to do and I try to schedule the meetings with everyone. this is mostly done in google hangout chat during the week.
+
+Group project
+Source: https://github.com/canito487/Team-4-S16-CIT360/tree/master/CalendarApp/src
+I created the following files:
+Address.java
+CalDB.java
+Event.java
+Form.java
+
+I worked on changing Jayson's Calendar view code to work with our application:
+calendarView.java
+
+Caleb created:
+MenuView.java
+
+Kyle created the menu that I changed to the controller and edited it to work with our applcation
+CalendarMenu.java
